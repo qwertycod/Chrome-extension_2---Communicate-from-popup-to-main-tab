@@ -1,0 +1,27 @@
+ {
+  "name": "QwertyCod",
+  "description": "Pass data from popup to chrome tabs",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [
+      "webRequest",
+      "scripting",
+      "activeTab",
+      "clipboardRead",
+      "clipboardWrite",
+      "tabs",
+      "storage"
+  ],
+  "action":{
+      "default_title": "Extension popup",
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [""],
+      "js": ["change.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
