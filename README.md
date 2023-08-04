@@ -2,6 +2,7 @@
 **Chrome extension: Communicate from popup js to main tab**
 
 **Our goal**
+
 In this blog, we are trying to set a global value in via popup and get anywhere among the main tabs of a Chrome extension. In other words, we are passing values from popup to the main tabs.
 
 We are doing this by setting the value of a variable named currentNumber from popup into a chrome local storage, will get by reading from the chrome local storage.
@@ -11,6 +12,9 @@ We need that value(currentNumber) for running a script via another JavaScript fi
 We will be using manifest version 3 for it.
 
 In the below gif, we can see that we are setting the value in popup.js and we are getting the value in Chrome tab (logging it in the console). We can also see that we are logging the value in the inspection window of the popup as well.
+
+![popup](https://github.com/qwertycod/Chrome-extension_2---Communicate-from-popup-to-main-tab/assets/112320985/e0a7fed0-c23b-4619-abc0-a22bd2029b31)
+
 
 **Steps to setup**
 
