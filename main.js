@@ -1,5 +1,4 @@
- {
- chrome.storage.local.get(["currentNumer"]).then((result) => {
+chrome.storage.local.get(["currentNumer"]).then((result) => {
   console.log("Value currently is " + result.currentNumer);
   document.getElementById("currentId").value = result.currentNumer;
   document.getElementById("currentIdLabel").textContent  = result.currentNumer;
