@@ -73,3 +73,22 @@ saveButton.addEventListener('click', async () => {
   //   }, 100);
   // });
   // })
+
+
+//Similarly, to retrieve all those values from chrome storage, we can use the method chrome.storage.local.get(). 
+
+//We can do like:
+
+//Notice how are we fetching the data in sequece – [“currentNumer”,”submitData”, “userName”]
+
+// chrome.storage.local.get(["currentNumer","submitData", "userName"]).then((result) => {
+//   try {
+//     console.log("result is " + result);
+//     console.log("Value currently is " + result.currentNumer);
+//    console.log("submitData currently is " + result.submitData);
+//    console.log("userName currently is " + result.userName);
+//  }
+//   catch (e) {
+//     console.log('Error while fetching data', e)
+//   }
+// }); 
